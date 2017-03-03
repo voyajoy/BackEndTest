@@ -1,0 +1,31 @@
+version: '2'
+
+services:
+  db:
+    image: postgres
+  redis:
+    image: redis
+  web:
+    build: .
+    command: make run
+    volumes:
+      - .:/opt
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+      - worker
+  worker:
+    build: .
+    command: make worker
+    volumes:
+      - .:/opt
+    depends_on:
+      - redis
+  beat:
+    build: .
+    command: make beat
+    volumes:
+      - .:/opt
+    depends_on:
+      - worker
