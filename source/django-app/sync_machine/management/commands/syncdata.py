@@ -8,3 +8,4 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         Commit.data_loader.run()
+        print('Task Complete.')
