@@ -1,0 +1,34 @@
+{% extends 'index.html' %}
+
+{% block commits %}
+<div>
+    <h1>Commits!</h1>
+        {% for commit in commits %}  
+            <p><strong>{{ commit.author }}</strong> - {{ commit.pub_date }}</p>
+            <p>{{ commit.text }}</p>
+            Read - <a href="/readed/{{ commit.id }}/{{ commits.number }}/">{{ commit.read_status }}</a>
+            <hr>
+        {% endfor %}
+</div>
+        <div align="center">
+                {% if commits.has_previous %}
+                        <a style="width: 15px;" href="/page/{{ commits.previous_page_number }}/"><span> < </span></a>
+                {% else %}
+                        <a href=""><</a>
+                {% endif %}
+                {% for page in commits.paginator.page_range %}
+                        {% if page == commits.number %}
+                                <a href="/page/{{ page }}/">{{ page }}</a>
+                        {% else %}
+                                <a href="/page/{{ page }}/">{{ page }}</a>
+                        {% endif %}
+                {% endfor %}
+                        {% if commits.has_next %}
+                                <a href="/page/{{ commits.next_page_number }}/">></a>
+                        {% else %}
+                                <a href="">></a>
+                        {% endif %}
+       
+        </div>
+{% endblock %}
+ 
