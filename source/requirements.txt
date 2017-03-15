@@ -1,0 +1,6 @@
+ Django
+ psycopg2
+ python-dateutil
+ django-celery
+ python-dateutil
+ 
