@@ -22,4 +22,4 @@ RUN go get -v -u -fix github.com/revel/cmd/revel
 EXPOSE 9000
 RUN revel test github.com/rafalgolarz/BackEndTest/source/api
 # settings for prod or dev are stored in source/conf/app.conf
-#ENTRYPOINT revel run dev 9000
+ENTRYPOINT revel run dev 9000
