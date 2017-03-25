@@ -17,9 +17,11 @@ open urls:
 http://172.25.3.4:9000
 http://172.25.3.4:9000/commits
 
-curl -H "Content-Type: application/json" -X POST -d '{ "sha": "cb6c0c14eb58fb0660bc429cc137ef7e519ad06d", "author": "Rafal", "committer": "Rafal", "date":"2017-03-25T14:59:50Z", "message":"first test", "url": "http://test", "reviewed": true }' -i http://172.25.3.4:9000/commits/add
+#### POST to ADD a new document to the collection
+curl -H "Content-Type: application/json" -X POST -d '{ "sha": "cb6c0c14eb58fb0660bc429cc137ef7e519ad06d", "author": "Rafal", "committer": "Rafal", "date":"2017-03-25T14:59:50Z", "message":"first test", "url": "http://test", "reviewed": false }' -i http://172.25.3.4:9000/commits/add
 
-curl -H "Content-Type: application/json" -X PUT -d '{ "reviewed": false }' -i http://172.25.3.4:9000/commits/58d5b39e42eb91da1e85cfc0
+#### PUT to UPDATE a document (replace 58d5b39e42eb91da1e85cfc0 with the proper key)
+curl -H "Content-Type: application/json" -X PUT -d '{ "reviewed": true }' -i http://172.25.3.4:9000/commits/58d5b39e42eb91da1e85cfc0
 
 ## troubleshooting
 docker exec -it BackEndTest bash
