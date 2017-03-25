@@ -1,0 +1,1734 @@
+[
+  {
+    "sha": "ed12ea371c5352b4b13f9f1c4e0f577fbd30bb2a",
+    "commit": {
+      "author": {
+        "name": "Michaël Zasso",
+        "email": "targos@protonmail.com",
+        "date": "2017-02-15T15:48:59Z"
+      },
+      "committer": {
+        "name": "Michaël Zasso",
+        "email": "targos@protonmail.com",
+        "date": "2017-03-25T08:44:12Z"
+      },
+      "message": "src: update inspector code to match upstream API\n\nPR-URL: https://github.com/nodejs/node/pull/11752\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Franziska Hinkelmann <franziska.hinkelmann@gmail.com>",
+      "tree": {
+        "sha": "3f66f71d7f4390869b43eaec521979ab533ca2d9",
+        "url": "https://api.github.com/repos/nodejs/node/git/trees/3f66f71d7f4390869b43eaec521979ab533ca2d9"
+      },
+      "url": "https://api.github.com/repos/nodejs/node/git/commits/ed12ea371c5352b4b13f9f1c4e0f577fbd30bb2a",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/nodejs/node/commits/ed12ea371c5352b4b13f9f1c4e0f577fbd30bb2a",
+    "html_url": "https://github.com/nodejs/node/commit/ed12ea371c5352b4b13f9f1c4e0f577fbd30bb2a",
+    "comments_url": "https://api.github.com/repos/nodejs/node/commits/ed12ea371c5352b4b13f9f1c4e0f577fbd30bb2a/comments",
+    "author": {
+      "login": "targos",
+      "id": 2352663,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2352663?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/targos",
+      "html_url": "https://github.com/targos",
+      "followers_url": "https://api.github.com/users/targos/followers",
+      "following_url": "https://api.github.com/users/targos/following{/other_user}",
+      "gists_url": "https://api.github.com/users/targos/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/targos/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/targos/subscriptions",
+      "organizations_url": "https://api.github.com/users/targos/orgs",
+      "repos_url": "https://api.github.com/users/targos/repos",
+      "events_url": "https://api.github.com/users/targos/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/targos/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "targos",
+      "id": 2352663,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2352663?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/targos",
+      "html_url": "https://github.com/targos",
+      "followers_url": "https://api.github.com/users/targos/followers",
+      "following_url": "https://api.github.com/users/targos/following{/other_user}",
+      "gists_url": "https://api.github.com/users/targos/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/targos/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/targos/subscriptions",
+      "organizations_url": "https://api.github.com/users/targos/orgs",
+      "repos_url": "https://api.github.com/users/targos/repos",
+      "events_url": "https://api.github.com/users/targos/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/targos/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9c9e2d7f4a576310eb652a620db090f00a320243",
+        "url": "https://api.github.com/repos/nodejs/node/commits/9c9e2d7f4a576310eb652a620db090f00a320243",
+        "html_url": "https://github.com/nodejs/node/commit/9c9e2d7f4a576310eb652a620db090f00a320243"
+      }
+    ]
+  },
+  {
+    "sha": "9c9e2d7f4a576310eb652a620db090f00a320243",
+    "commit": {
+      "author": {
+        "name": "Michaël Zasso",
+        "email": "targos@protonmail.com",
+        "date": "2017-03-23T13:05:51Z"
+      },
+      "committer": {
+        "name": "Michaël Zasso",
+        "email": "targos@protonmail.com",
+        "date": "2017-03-25T08:44:12Z"
+      },
+      "message": "deps: backport 3297130 from upstream V8\n\nThis fixes a build failure on Windows.\n\nOriginal commit message:\n\n    Rename TypeFeedbackVector to FeedbackVector.\n\n    ... and TypeFeedbackMetadata to FeedbackMetadata.\n\n    BUG=\n\n    Change-Id: I2556d1c2a8f37b8cf3d532cc98d973b6dc7e9e6c\n    Reviewed-on: https://chromium-review.googlesource.com/439244\n    Commit-Queue: Igor Sheludko <ishell@chromium.org>\n    Reviewed-by: Michael Starzinger <mstarzinger@chromium.org>\n    Reviewed-by: Michael Stanton <mvstanton@chromium.org>\n    Reviewed-by: Jaroslav Sevcik <jarin@chromium.org>\n    Reviewed-by: Yang Guo <yangguo@chromium.org>\n    Reviewed-by: Hannes Payer <hpayer@chromium.org>\n    Cr-Commit-Position: refs/heads/master@{#42999}\n\nRefs: https://github.com/nodejs/v8/issues/4\nPR-URL: https://github.com/nodejs/node/pull/11752\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Franziska Hinkelmann <franziska.hinkelmann@gmail.com>",
+      "tree": {
+        "sha": "5a41e9dde9234264ac4196a1b34493d8e0a6fde5",
+        "url": "https://api.github.com/repos/nodejs/node/git/trees/5a41e9dde9234264ac4196a1b34493d8e0a6fde5"
+      },
+      "url": "https://api.github.com/repos/nodejs/node/git/commits/9c9e2d7f4a576310eb652a620db090f00a320243",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/nodejs/node/commits/9c9e2d7f4a576310eb652a620db090f00a320243",
+    "html_url": "https://github.com/nodejs/node/commit/9c9e2d7f4a576310eb652a620db090f00a320243",
+    "comments_url": "https://api.github.com/repos/nodejs/node/commits/9c9e2d7f4a576310eb652a620db090f00a320243/comments",
+    "author": {
+      "login": "targos",
+      "id": 2352663,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2352663?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/targos",
+      "html_url": "https://github.com/targos",
+      "followers_url": "https://api.github.com/users/targos/followers",
+      "following_url": "https://api.github.com/users/targos/following{/other_user}",
+      "gists_url": "https://api.github.com/users/targos/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/targos/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/targos/subscriptions",
+      "organizations_url": "https://api.github.com/users/targos/orgs",
+      "repos_url": "https://api.github.com/users/targos/repos",
+      "events_url": "https://api.github.com/users/targos/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/targos/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "targos",
+      "id": 2352663,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2352663?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/targos",
+      "html_url": "https://github.com/targos",
+      "followers_url": "https://api.github.com/users/targos/followers",
+      "following_url": "https://api.github.com/users/targos/following{/other_user}",
+      "gists_url": "https://api.github.com/users/targos/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/targos/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/targos/subscriptions",
+      "organizations_url": "https://api.github.com/users/targos/orgs",
+      "repos_url": "https://api.github.com/users/targos/repos",
+      "events_url": "https://api.github.com/users/targos/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/targos/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "07088e6fc1342b5581d9e6f7ce084308573e3139",
+        "url": "https://api.github.com/repos/nodejs/node/commits/07088e6fc1342b5581d9e6f7ce084308573e3139",
+        "html_url": "https://github.com/nodejs/node/commit/07088e6fc1342b5581d9e6f7ce084308573e3139"
+      }
+    ]
+  },
+  {
+    "sha": "07088e6fc1342b5581d9e6f7ce084308573e3139",
+    "commit": {
+      "author": {
+        "name": "Michaël Zasso",
+        "email": "targos@protonmail.com",
+        "date": "2017-03-21T15:16:48Z"
+      },
+      "committer": {
+        "name": "Michaël Zasso",
+        "email": "targos@protonmail.com",
+        "date": "2017-03-25T08:44:11Z"
+      },
+      "message": "deps: backport 39642fa from upstream V8\n\nThis is an almost clean cherry-pick of the original commit. The only\nconflict was related to a rename of an internal class.\n\nOriginal commit message:\n\n    [async-await] (simpler) fix for Return in try/finally in async functions\n\n    Alternative approach to https://codereview.chromium.org/2667983004/, which\n    does not depend on implicit control flow changes from\n    https://codereview.chromium.org/2664083002\n\n    - Remove handling for `async function` from Parser::RewriteReturn(). This functionality\n    is moved to BytecodeGenerator::BuildAsyncReturn(). This ensures that promise resolution\n    is deferred until all finally blocks are evaluated fully.\n\n    - Add a new deferred command (CMD_ASYNC_RETURN), which instructs ControlScope to\n    generate return code using BuildAsyncReturn rather than BuildReturn.\n\n    - Parser has a new `NewReturnStatement()` helper which determines what type of return\n    statement to generate based on the type of function.\n\n    BUG=v8:5896, v8:4483\n    R=littledan@chromium.org, neis@chromium.org, rmcilroy@chromium.org, adamk@chromium.org, gsathya@chromium.org\n\n    Review-Url: https://codereview.chromium.org/2685683002\n    Cr-Commit-Position: refs/heads/master@{#43104}\n\nFixes: https://github.com/nodejs/node/issues/11960\nPR-URL: https://github.com/nodejs/node/pull/11752\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Franziska Hinkelmann <franziska.hinkelmann@gmail.com>",
+      "tree": {
+        "sha": "05df5e41276c73c3f3392e1aa0bce02084866d2b",
+        "url": "https://api.github.com/repos/nodejs/node/git/trees/05df5e41276c73c3f3392e1aa0bce02084866d2b"
+      },
+      "url": "https://api.github.com/repos/nodejs/node/git/commits/07088e6fc1342b5581d9e6f7ce084308573e3139",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/nodejs/node/commits/07088e6fc1342b5581d9e6f7ce084308573e3139",
+    "html_url": "https://github.com/nodejs/node/commit/07088e6fc1342b5581d9e6f7ce084308573e3139",
+    "comments_url": "https://api.github.com/repos/nodejs/node/commits/07088e6fc1342b5581d9e6f7ce084308573e3139/comments",
+    "author": {
+      "login": "targos",
+      "id": 2352663,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2352663?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/targos",
+      "html_url": "https://github.com/targos",
+      "followers_url": "https://api.github.com/users/targos/followers",
+      "following_url": "https://api.github.com/users/targos/following{/other_user}",
+      "gists_url": "https://api.github.com/users/targos/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/targos/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/targos/subscriptions",
+      "organizations_url": "https://api.github.com/users/targos/orgs",
+      "repos_url": "https://api.github.com/users/targos/repos",
+      "events_url": "https://api.github.com/users/targos/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/targos/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "targos",
+      "id": 2352663,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2352663?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/targos",
+      "html_url": "https://github.com/targos",
+      "followers_url": "https://api.github.com/users/targos/followers",
+      "following_url": "https://api.github.com/users/targos/following{/other_user}",
+      "gists_url": "https://api.github.com/users/targos/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/targos/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/targos/subscriptions",
+      "organizations_url": "https://api.github.com/users/targos/orgs",
+      "repos_url": "https://api.github.com/users/targos/repos",
+      "events_url": "https://api.github.com/users/targos/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/targos/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8394b05e20d3b661bb36cf778cd1f8c323334d7d",
+        "url": "https://api.github.com/repos/nodejs/node/commits/8394b05e20d3b661bb36cf778cd1f8c323334d7d",
+        "html_url": "https://github.com/nodejs/node/commit/8394b05e20d3b661bb36cf778cd1f8c323334d7d"
+      }
+    ]
+  },
+  {
+    "sha": "8394b05e20d3b661bb36cf778cd1f8c323334d7d",
+    "commit": {
+      "author": {
+        "name": "Michaël Zasso",
+        "email": "targos@protonmail.com",
+        "date": "2017-03-17T10:17:49Z"
+      },
+      "committer": {
+        "name": "Michaël Zasso",
+        "email": "targos@protonmail.com",
+        "date": "2017-03-25T08:44:11Z"
+      },
+      "message": "deps: cherry-pick c5c570f from upstream V8\n\nOriginal commit message:\n\n    [build] Fix gyp files for building inspector\n\n    This patch fixes compilation of V8 with inspector on Windows as well as\n    cross-compilation of the V8 inspector.\n\n    BUG=\n\n    Refs: https://github.com/nodejs/node/pull/10992\n    Review-Url: https://codereview.chromium.org/2705423003\n    Cr-Commit-Position: refs/heads/master@{#43533}\n\nPR-URL: https://github.com/nodejs/node/pull/11752\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Franziska Hinkelmann <franziska.hinkelmann@gmail.com>",
+      "tree": {
+        "sha": "4a29902c921771e2e2b0eecad016d103105dad21",
+        "url": "https://api.github.com/repos/nodejs/node/git/trees/4a29902c921771e2e2b0eecad016d103105dad21"
+      },
+      "url": "https://api.github.com/repos/nodejs/node/git/commits/8394b05e20d3b661bb36cf778cd1f8c323334d7d",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/nodejs/node/commits/8394b05e20d3b661bb36cf778cd1f8c323334d7d",
+    "html_url": "https://github.com/nodejs/node/commit/8394b05e20d3b661bb36cf778cd1f8c323334d7d",
+    "comments_url": "https://api.github.com/repos/nodejs/node/commits/8394b05e20d3b661bb36cf778cd1f8c323334d7d/comments",
+    "author": {
+      "login": "targos",
+      "id": 2352663,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2352663?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/targos",
+      "html_url": "https://github.com/targos",
+      "followers_url": "https://api.github.com/users/targos/followers",
+      "following_url": "https://api.github.com/users/targos/following{/other_user}",
+      "gists_url": "https://api.github.com/users/targos/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/targos/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/targos/subscriptions",
+      "organizations_url": "https://api.github.com/users/targos/orgs",
+      "repos_url": "https://api.github.com/users/targos/repos",
+      "events_url": "https://api.github.com/users/targos/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/targos/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "targos",
+      "id": 2352663,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2352663?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/targos",
+      "html_url": "https://github.com/targos",
+      "followers_url": "https://api.github.com/users/targos/followers",
+      "following_url": "https://api.github.com/users/targos/following{/other_user}",
+      "gists_url": "https://api.github.com/users/targos/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/targos/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/targos/subscriptions",
+      "organizations_url": "https://api.github.com/users/targos/orgs",
+      "repos_url": "https://api.github.com/users/targos/repos",
+      "events_url": "https://api.github.com/users/targos/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/targos/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3471d6312df83151b7132841fcc76752ee4adf12",
+        "url": "https://api.github.com/repos/nodejs/node/commits/3471d6312df83151b7132841fcc76752ee4adf12",
+        "html_url": "https://github.com/nodejs/node/commit/3471d6312df83151b7132841fcc76752ee4adf12"
+      }
+    ]
+  },
+  {
+    "sha": "3471d6312df83151b7132841fcc76752ee4adf12",
+    "commit": {
+      "author": {
+        "name": "Franziska Hinkelmann",
+        "email": "franzih@chromium.org",
+        "date": "2017-03-06T11:46:20Z"
+      },
+      "committer": {
+        "name": "Michaël Zasso",
+        "email": "targos@protonmail.com",
+        "date": "2017-03-25T08:44:11Z"
+      },
+      "message": "deps: cherry-pick 0ba513f05 from V8 upstream\n\nOriginal commit message:\n  [api] Fix DescriptorInterceptor with access check.\n\n  The DescriptorInterceptor should intercept all\n  Object.getOwnPropertyDescriptor calls. This CL fixes\n  the interceptor's behavior if the iterator state is\n  ACCESS_CHECK.\n\n  BUG=\n\n  Review-Url: https://codereview.chromium.org/2707263002\n  Cr-Commit-Position: refs/heads/master@{#43417}\n\nPR-URL: https://github.com/nodejs/node/pull/11712\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Myles Borins <myles.borins@gmail.com>\nReviewed-By: Ali Ijaz Sheikh <ofrobots@google.com>\nReviewed-By: James M Snell <jasnell@gmail.com>",
+      "tree": {
+        "sha": "aafc907460df2a0b5e67001c0a0f190cf0a9dec6",
+        "url": "https://api.github.com/repos/nodejs/node/git/trees/aafc907460df2a0b5e67001c0a0f190cf0a9dec6"
+      },
+      "url": "https://api.github.com/repos/nodejs/node/git/commits/3471d6312df83151b7132841fcc76752ee4adf12",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/nodejs/node/commits/3471d6312df83151b7132841fcc76752ee4adf12",
+    "html_url": "https://github.com/nodejs/node/commit/3471d6312df83151b7132841fcc76752ee4adf12",
+    "comments_url": "https://api.github.com/repos/nodejs/node/commits/3471d6312df83151b7132841fcc76752ee4adf12/comments",
+    "author": {
+      "login": "fhinkel",
+      "id": 101553,
+      "avatar_url": "https://avatars0.githubusercontent.com/u/101553?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/fhinkel",
+      "html_url": "https://github.com/fhinkel",
+      "followers_url": "https://api.github.com/users/fhinkel/followers",
+      "following_url": "https://api.github.com/users/fhinkel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/fhinkel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/fhinkel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/fhinkel/subscriptions",
+      "organizations_url": "https://api.github.com/users/fhinkel/orgs",
+      "repos_url": "https://api.github.com/users/fhinkel/repos",
+      "events_url": "https://api.github.com/users/fhinkel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/fhinkel/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "targos",
+      "id": 2352663,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2352663?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/targos",
+      "html_url": "https://github.com/targos",
+      "followers_url": "https://api.github.com/users/targos/followers",
+      "following_url": "https://api.github.com/users/targos/following{/other_user}",
+      "gists_url": "https://api.github.com/users/targos/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/targos/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/targos/subscriptions",
+      "organizations_url": "https://api.github.com/users/targos/orgs",
+      "repos_url": "https://api.github.com/users/targos/repos",
+      "events_url": "https://api.github.com/users/targos/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/targos/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "fcc58bf0da29f445a799c9e655ada3e3c5c3a3fe",
+        "url": "https://api.github.com/repos/nodejs/node/commits/fcc58bf0da29f445a799c9e655ada3e3c5c3a3fe",
+        "html_url": "https://github.com/nodejs/node/commit/fcc58bf0da29f445a799c9e655ada3e3c5c3a3fe"
+      }
+    ]
+  },
+  {
+    "sha": "fcc58bf0da29f445a799c9e655ada3e3c5c3a3fe",
+    "commit": {
+      "author": {
+        "name": "Anna Henningsen",
+        "email": "anna@addaleax.net",
+        "date": "2017-03-08T21:08:21Z"
+      },
+      "committer": {
+        "name": "Michaël Zasso",
+        "email": "targos@protonmail.com",
+        "date": "2017-03-25T08:44:11Z"
+      },
+      "message": "deps: cherry-pick a927f81c7 from V8 upstream\n\nOriginal commit message:\n\n  [ValueSerializer] Allow wire format versions beginning with 13 to be deserialized in non-legacy mode.\n\n  As of version 13, delegates do not need to worry about colliding tags with the\n  tags reserved by v8, since v8 inserts a \"host object\" prefix beforehand. Thus\n  the format is now suitable for more general use, without opting into the \"legacy\"\n  mode that had this caveat.\n\n  Review-Url: https://codereview.chromium.org/2722213002\n  Cr-Commit-Position: refs/heads/master@{#43521}\n\nPR-URL: https://github.com/nodejs/node/pull/11752\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Franziska Hinkelmann <franziska.hinkelmann@gmail.com>",
+      "tree": {
+        "sha": "f829b41ec703e6aa55fbb266316cb9f24e22ab29",
+        "url": "https://api.github.com/repos/nodejs/node/git/trees/f829b41ec703e6aa55fbb266316cb9f24e22ab29"
+      },
+      "url": "https://api.github.com/repos/nodejs/node/git/commits/fcc58bf0da29f445a799c9e655ada3e3c5c3a3fe",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/nodejs/node/commits/fcc58bf0da29f445a799c9e655ada3e3c5c3a3fe",
+    "html_url": "https://github.com/nodejs/node/commit/fcc58bf0da29f445a799c9e655ada3e3c5c3a3fe",
+    "comments_url": "https://api.github.com/repos/nodejs/node/commits/fcc58bf0da29f445a799c9e655ada3e3c5c3a3fe/comments",
+    "author": {
+      "login": "addaleax",
+      "id": 899444,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/899444?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/addaleax",
+      "html_url": "https://github.com/addaleax",
+      "followers_url": "https://api.github.com/users/addaleax/followers",
+      "following_url": "https://api.github.com/users/addaleax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/addaleax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/addaleax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/addaleax/subscriptions",
+      "organizations_url": "https://api.github.com/users/addaleax/orgs",
+      "repos_url": "https://api.github.com/users/addaleax/repos",
+      "events_url": "https://api.github.com/users/addaleax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/addaleax/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "targos",
+      "id": 2352663,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2352663?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/targos",
+      "html_url": "https://github.com/targos",
+      "followers_url": "https://api.github.com/users/targos/followers",
+      "following_url": "https://api.github.com/users/targos/following{/other_user}",
+      "gists_url": "https://api.github.com/users/targos/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/targos/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/targos/subscriptions",
+      "organizations_url": "https://api.github.com/users/targos/orgs",
+      "repos_url": "https://api.github.com/users/targos/repos",
+      "events_url": "https://api.github.com/users/targos/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/targos/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "83bf2975ec7a105c1e08caba21e5c4cccd9beabb",
+        "url": "https://api.github.com/repos/nodejs/node/commits/83bf2975ec7a105c1e08caba21e5c4cccd9beabb",
+        "html_url": "https://github.com/nodejs/node/commit/83bf2975ec7a105c1e08caba21e5c4cccd9beabb"
+      }
+    ]
+  },
+  {
+    "sha": "83bf2975ec7a105c1e08caba21e5c4cccd9beabb",
+    "commit": {
+      "author": {
+        "name": "Anna Henningsen",
+        "email": "anna@addaleax.net",
+        "date": "2017-03-08T20:41:09Z"
+      },
+      "committer": {
+        "name": "Michaël Zasso",
+        "email": "targos@protonmail.com",
+        "date": "2017-03-25T08:44:10Z"
+      },
+      "message": "deps: cherry-pick V8 ValueSerializer changes\n\nRefs: https://github.com/nodejs/node/pull/11048\n\nBelow is the list of commits:\n\ndeps: cherry-pick 78c0be52d from V8 upstream\n\nOriginal commit message:\n\n  ValueSerializer: Promote scheduled exceptions from wasm::ErrorThrower.\n\n  wasm::ErrorThrower doesn't actually throw exceptions, it just schedules them.\n  As a result, this exception isn't handled properly by code which expects\n  ValueDeserializer to actually throw. For instance, the unit tests use a\n  TryCatch to catch and handle expected exceptions in unit tests.\n\n  Before this patch, I see local unit test failures because a wasm decode test\n  schedules one, but it isn't caught (and instead causes Context::New to fail\n  at the beginning of the next test).\n\n  BUG=685713\n\n  Review-Url: https://codereview.chromium.org/2659483004\n  Cr-Commit-Position: refs/heads/master@{#42718}\n\ndeps: cherry-pick 966355585 from V8 upstream\n\nOriginal commit message:\n\n  [d8] Use ValueSerializer for postMessage (instead of ad-hoc serializer)\n\n  Review-Url: https://codereview.chromium.org/2643723010\n  Cr-Commit-Position: refs/heads/master@{#42749}\n\ndeps: cherry-pick bf511b426 from V8 upstream\n\nOriginal commit message:\n\n  ValueSerializer: Support efficiently reading and writing one-byte strings.\n\n  memcpy is faster than UTF-8 encoding/decoding. This yields 10-20% wins on\n  serializing and deserializing long ASCII strings, according to\n  blink_perf.bindings -- and these are already in a fast path where the entire\n  string is known to be ASCII (but this has to be checked). The win may be\n  larger for strings in Latin-1 but not ASCII (though I suspect this is an\n  uncommon case).\n\n  A change is also made to make ValueSerializerTest.EncodeTwoByteStringUsesPadding\n  survive wire format version number changes.\n\n  This is the first of a series of wire format changes from the previous Blink\n  format. The deserializer continues to be able to read the old format, but\n  Chromium M56 will no longer be able to read the messages written by this, in M58.\n\n  BUG=chromium:686159\n\n  Review-Url: https://codereview.chromium.org/2658793004\n  Cr-Commit-Position: refs/heads/master@{#42753}\n\ndeps: cherry-pick 6f1639ed1 from V8 upstream\n\nOriginal commit message:\n\n  ValueSerializer: Distinguish between 'undefined' and an absent property.\n\n  Dealing with this case requires a wire format change. It is possible that an\n  element can be absent even in an array where the dense format was chosen\n  (because the array initially had no holes), if the elements are modified while\n  they are being serialized. In this case, a new tag for the \"hole\" is emitted.\n\n  The logic to treat undefined in dense arrays as an absent property is restricted\n  to versions of the wire format that this tag did not exist.\n\n  BUG=chromium:686159,chromium:665820\n\n  Review-Url: https://codereview.chromium.org/2660093002\n  Cr-Original-Commit-Position: refs/heads/master@{#42784}\n  Committed: https://chromium.googlesource.com/v8/v8/+/dc85f4c8338c1c824af4f7ee3274dc9f95d14e49\n  Review-Url: https://codereview.chromium.org/2660093002\n  Cr-Commit-Position: refs/heads/master@{#42800}\n\ndeps: cherry-pick c3856de37 from V8 upstream\n\nOriginal commit message:\n\n  ValueSerializer: Check for zero length before casting to FixedDoubleArray.\n\n  Even though the elements kind is FAST_DOUBLE_ELEMENTS, if length is zero\n  the isolate's empty_fixed_array is used. It's illegal to cast this to\n  FixedDoubleArray, so we avoid the cast.\n\n  BUG=chromium:686479\n\n  Review-Url: https://codereview.chromium.org/2665313003\n  Cr-Commit-Position: refs/heads/master@{#42867}\n\ndeps: cherry-pick 591cc0b4c from V8 upstream\n\nOriginal commit message:\n\n  ValueSerializer: Share string encoding code with String and RegExp objects.\n\n  This avoids the need to pull in the UTF-8 encoding code from the public API,\n  and allows it to take advantage of any supported way that i::String can be\n  encoded (one- or two-byte).\n\n  Backward compatibility is maintained, but this is the behavior beginning\n  with this version.\n\n  BUG=chromium:686159\n\n  Review-Url: https://codereview.chromium.org/2665653004\n  Cr-Commit-Position: refs/heads/master@{#42872}\n\ndeps: cherry-pick 79837f5f6 from V8 upstream\n\nOriginal commit message:\n\n  Improve ValueSerializer perf regression after 96635558\n\n  BUG=687196\n  R=jbroman@chromium.org\n\n  Review-Url: https://codereview.chromium.org/2674613002\n  Cr-Commit-Position: refs/heads/master@{#42938}\n\ndeps: cherry-pick 8990399dc from V8 upstream\n\nOriginal commit message:\n\n  ValueDeserializer: Only allow valid keys when deserializing object properties.\n\n  The serializer won't ever write a more complex object. Not validating this\n  allows other things to be used as keys, and converted to string when the\n  property set actually occurs. It turns out this gives an opportunity to trigger\n  OOM by giving an object a key which is a very large sparse array (whose string\n  representation is very large).\n\n  This case is now rejected by the deserializer.\n\n  BUG=chromium:686511\n\n  Review-Url: https://codereview.chromium.org/2697023002\n  Cr-Commit-Position: refs/heads/master@{#43249}\n\ndeps: cherry-pick 68960eeb7 from V8 upstream\n\nOriginal commit message:\n\n  ValueDeserializer: Make sure that an exception is the legacy path.\n\n  The entry points to the deserializer are responsible for ensuring that an\n  exception is pending by the time they return. Some failures throw exceptions\n  themselves, while others (like errors in the format) are exceptions caused by\n  the deserializer, not coming from the runtime.\n\n  Like the non-legacy path, a default deserialization exception should be thrown\n  in such cases.\n\n  BUG=chromium:693411\n\n  Review-Url: https://codereview.chromium.org/2712713002\n  Cr-Commit-Position: refs/heads/master@{#43390}\n\ndeps: cherry-pick 3b15d950e from V8 upstream\n\nOriginal commit message:\n  ValueSerializer: Add SetTreatArrayBufferViewsAsHostObjects() flag\n\n  Add `ValueSerializer::SetTreatArrayBufferViewsAsHostObjects()` which\n  instructs the `ValueSerializer` to treat ArrayBufferView objects as\n  host objects.\n\n  BUG=v8:5926\n\n  Review-Url: https://codereview.chromium.org/2696133007\n  Cr-Commit-Position: refs/heads/master@{#43281}\n\ndeps: cherry-pick 654351997 from V8 upstream\n\nOriginal commit message:\n\n  ValueSerializer: Add an explicit tag for host objects.\n\n  This makes it no longer necessary to ensure that V8 and Blink have non-colliding\n  tags, which makes it easier for them to evolve independently, and also makes\n  the wire format more suitable for other V8 embedders, who would not\n  necessarily be surveyed before V8 introduced a new tag that might collide\n  with theirs.\n\n  BUG=chromium:686159\n\n  Review-Url: https://codereview.chromium.org/2709023003\n  Cr-Commit-Position: refs/heads/master@{#43466}\n\nPR-URL: https://github.com/nodejs/node/pull/11752\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Franziska Hinkelmann <franziska.hinkelmann@gmail.com>",
+      "tree": {
+        "sha": "dd619038cdc120de77ef4f1bcea5f1b305946024",
+        "url": "https://api.github.com/repos/nodejs/node/git/trees/dd619038cdc120de77ef4f1bcea5f1b305946024"
+      },
+      "url": "https://api.github.com/repos/nodejs/node/git/commits/83bf2975ec7a105c1e08caba21e5c4cccd9beabb",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/nodejs/node/commits/83bf2975ec7a105c1e08caba21e5c4cccd9beabb",
+    "html_url": "https://github.com/nodejs/node/commit/83bf2975ec7a105c1e08caba21e5c4cccd9beabb",
+    "comments_url": "https://api.github.com/repos/nodejs/node/commits/83bf2975ec7a105c1e08caba21e5c4cccd9beabb/comments",
+    "author": {
+      "login": "addaleax",
+      "id": 899444,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/899444?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/addaleax",
+      "html_url": "https://github.com/addaleax",
+      "followers_url": "https://api.github.com/users/addaleax/followers",
+      "following_url": "https://api.github.com/users/addaleax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/addaleax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/addaleax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/addaleax/subscriptions",
+      "organizations_url": "https://api.github.com/users/addaleax/orgs",
+      "repos_url": "https://api.github.com/users/addaleax/repos",
+      "events_url": "https://api.github.com/users/addaleax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/addaleax/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "targos",
+      "id": 2352663,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2352663?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/targos",
+      "html_url": "https://github.com/targos",
+      "followers_url": "https://api.github.com/users/targos/followers",
+      "following_url": "https://api.github.com/users/targos/following{/other_user}",
+      "gists_url": "https://api.github.com/users/targos/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/targos/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/targos/subscriptions",
+      "organizations_url": "https://api.github.com/users/targos/orgs",
+      "repos_url": "https://api.github.com/users/targos/repos",
+      "events_url": "https://api.github.com/users/targos/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/targos/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3f9c8fb87fe7ac79f433104ab564130d000772b8",
+        "url": "https://api.github.com/repos/nodejs/node/commits/3f9c8fb87fe7ac79f433104ab564130d000772b8",
+        "html_url": "https://github.com/nodejs/node/commit/3f9c8fb87fe7ac79f433104ab564130d000772b8"
+      }
+    ]
+  },
+  {
+    "sha": "3f9c8fb87fe7ac79f433104ab564130d000772b8",
+    "commit": {
+      "author": {
+        "name": "Michael Dawson",
+        "email": "michael_dawson@ca.ibm.com",
+        "date": "2016-05-09T22:44:42Z"
+      },
+      "committer": {
+        "name": "Michaël Zasso",
+        "email": "targos@protonmail.com",
+        "date": "2017-03-25T08:44:10Z"
+      },
+      "message": "deps: limit regress/regress-crbug-514081 v8 test\n\nregress/regress-crbug-514081 allocates a 2G block of memory\nand if there  are multiple variants running at the\nsame time this can lead to crashes, OOM kills or\nthe OS failing to allocate memory.  This patch\nlimits us to running a single variant of the test\n\nFixes: https://github.com/nodejs/node/issues/6340\nPR-URL: https://github.com/nodejs/node/pull/6678\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Fedor Indutny <fedor@indutny.com>",
+      "tree": {
+        "sha": "4a2c71d60ba9d9194b1585460a4e9ef022ea22ba",
+        "url": "https://api.github.com/repos/nodejs/node/git/trees/4a2c71d60ba9d9194b1585460a4e9ef022ea22ba"
+      },
+      "url": "https://api.github.com/repos/nodejs/node/git/commits/3f9c8fb87fe7ac79f433104ab564130d000772b8",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/nodejs/node/commits/3f9c8fb87fe7ac79f433104ab564130d000772b8",
+    "html_url": "https://github.com/nodejs/node/commit/3f9c8fb87fe7ac79f433104ab564130d000772b8",
+    "comments_url": "https://api.github.com/repos/nodejs/node/commits/3f9c8fb87fe7ac79f433104ab564130d000772b8/comments",
+    "author": {
+      "login": "mhdawson",
+      "id": 9373002,
+      "avatar_url": "https://avatars0.githubusercontent.com/u/9373002?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mhdawson",
+      "html_url": "https://github.com/mhdawson",
+      "followers_url": "https://api.github.com/users/mhdawson/followers",
+      "following_url": "https://api.github.com/users/mhdawson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mhdawson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mhdawson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mhdawson/subscriptions",
+      "organizations_url": "https://api.github.com/users/mhdawson/orgs",
+      "repos_url": "https://api.github.com/users/mhdawson/repos",
+      "events_url": "https://api.github.com/users/mhdawson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mhdawson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "targos",
+      "id": 2352663,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2352663?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/targos",
+      "html_url": "https://github.com/targos",
+      "followers_url": "https://api.github.com/users/targos/followers",
+      "following_url": "https://api.github.com/users/targos/following{/other_user}",
+      "gists_url": "https://api.github.com/users/targos/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/targos/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/targos/subscriptions",
+      "organizations_url": "https://api.github.com/users/targos/orgs",
+      "repos_url": "https://api.github.com/users/targos/repos",
+      "events_url": "https://api.github.com/users/targos/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/targos/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "89d8dc9afd22a6ae79009e8d147d172fb0e2cc05",
+        "url": "https://api.github.com/repos/nodejs/node/commits/89d8dc9afd22a6ae79009e8d147d172fb0e2cc05",
+        "html_url": "https://github.com/nodejs/node/commit/89d8dc9afd22a6ae79009e8d147d172fb0e2cc05"
+      }
+    ]
+  },
+  {
+    "sha": "89d8dc9afd22a6ae79009e8d147d172fb0e2cc05",
+    "commit": {
+      "author": {
+        "name": "Michaël Zasso",
+        "email": "targos@protonmail.com",
+        "date": "2017-03-21T09:16:56Z"
+      },
+      "committer": {
+        "name": "Michaël Zasso",
+        "email": "targos@protonmail.com",
+        "date": "2017-03-25T08:44:10Z"
+      },
+      "message": "src: update NODE_MODULE_VERSION to 54\n\nMajor V8 updates are usually API/ABI incompatible with previous\nversions. This commit adapts NODE_MODULE_VERSION for V8 5.7.\n\nRefs: https://github.com/nodejs/CTC/blob/master/meetings/2016-09-28.md\n\nPR-URL: https://github.com/nodejs/node/pull/11752\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Franziska Hinkelmann <franziska.hinkelmann@gmail.com>",
+      "tree": {
+        "sha": "9e15d069af824debc5c3088caf4b7329e940b193",
+        "url": "https://api.github.com/repos/nodejs/node/git/trees/9e15d069af824debc5c3088caf4b7329e940b193"
+      },
+      "url": "https://api.github.com/repos/nodejs/node/git/commits/89d8dc9afd22a6ae79009e8d147d172fb0e2cc05",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/nodejs/node/commits/89d8dc9afd22a6ae79009e8d147d172fb0e2cc05",
+    "html_url": "https://github.com/nodejs/node/commit/89d8dc9afd22a6ae79009e8d147d172fb0e2cc05",
+    "comments_url": "https://api.github.com/repos/nodejs/node/commits/89d8dc9afd22a6ae79009e8d147d172fb0e2cc05/comments",
+    "author": {
+      "login": "targos",
+      "id": 2352663,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2352663?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/targos",
+      "html_url": "https://github.com/targos",
+      "followers_url": "https://api.github.com/users/targos/followers",
+      "following_url": "https://api.github.com/users/targos/following{/other_user}",
+      "gists_url": "https://api.github.com/users/targos/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/targos/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/targos/subscriptions",
+      "organizations_url": "https://api.github.com/users/targos/orgs",
+      "repos_url": "https://api.github.com/users/targos/repos",
+      "events_url": "https://api.github.com/users/targos/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/targos/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "targos",
+      "id": 2352663,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2352663?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/targos",
+      "html_url": "https://github.com/targos",
+      "followers_url": "https://api.github.com/users/targos/followers",
+      "following_url": "https://api.github.com/users/targos/following{/other_user}",
+      "gists_url": "https://api.github.com/users/targos/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/targos/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/targos/subscriptions",
+      "organizations_url": "https://api.github.com/users/targos/orgs",
+      "repos_url": "https://api.github.com/users/targos/repos",
+      "events_url": "https://api.github.com/users/targos/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/targos/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c459d8ea5d402c702948c860d9497b2230ff7e8a",
+        "url": "https://api.github.com/repos/nodejs/node/commits/c459d8ea5d402c702948c860d9497b2230ff7e8a",
+        "html_url": "https://github.com/nodejs/node/commit/c459d8ea5d402c702948c860d9497b2230ff7e8a"
+      }
+    ]
+  },
+  {
+    "sha": "c459d8ea5d402c702948c860d9497b2230ff7e8a",
+    "commit": {
+      "author": {
+        "name": "Michaël Zasso",
+        "email": "targos@protonmail.com",
+        "date": "2017-03-21T09:16:54Z"
+      },
+      "committer": {
+        "name": "Michaël Zasso",
+        "email": "targos@protonmail.com",
+        "date": "2017-03-25T08:44:10Z"
+      },
+      "message": "deps: update V8 to 5.7.492.69\n\nPR-URL: https://github.com/nodejs/node/pull/11752\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Franziska Hinkelmann <franziska.hinkelmann@gmail.com>",
+      "tree": {
+        "sha": "56c282fc4d40e5cb613b47cf7be3ea0526ed5b6f",
+        "url": "https://api.github.com/repos/nodejs/node/git/trees/56c282fc4d40e5cb613b47cf7be3ea0526ed5b6f"
+      },
+      "url": "https://api.github.com/repos/nodejs/node/git/commits/c459d8ea5d402c702948c860d9497b2230ff7e8a",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/nodejs/node/commits/c459d8ea5d402c702948c860d9497b2230ff7e8a",
+    "html_url": "https://github.com/nodejs/node/commit/c459d8ea5d402c702948c860d9497b2230ff7e8a",
+    "comments_url": "https://api.github.com/repos/nodejs/node/commits/c459d8ea5d402c702948c860d9497b2230ff7e8a/comments",
+    "author": {
+      "login": "targos",
+      "id": 2352663,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2352663?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/targos",
+      "html_url": "https://github.com/targos",
+      "followers_url": "https://api.github.com/users/targos/followers",
+      "following_url": "https://api.github.com/users/targos/following{/other_user}",
+      "gists_url": "https://api.github.com/users/targos/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/targos/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/targos/subscriptions",
+      "organizations_url": "https://api.github.com/users/targos/orgs",
+      "repos_url": "https://api.github.com/users/targos/repos",
+      "events_url": "https://api.github.com/users/targos/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/targos/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "targos",
+      "id": 2352663,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2352663?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/targos",
+      "html_url": "https://github.com/targos",
+      "followers_url": "https://api.github.com/users/targos/followers",
+      "following_url": "https://api.github.com/users/targos/following{/other_user}",
+      "gists_url": "https://api.github.com/users/targos/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/targos/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/targos/subscriptions",
+      "organizations_url": "https://api.github.com/users/targos/orgs",
+      "repos_url": "https://api.github.com/users/targos/repos",
+      "events_url": "https://api.github.com/users/targos/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/targos/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e0bc5a7361b1d29c3ed034155fd779ce6f44fb13",
+        "url": "https://api.github.com/repos/nodejs/node/commits/e0bc5a7361b1d29c3ed034155fd779ce6f44fb13",
+        "html_url": "https://github.com/nodejs/node/commit/e0bc5a7361b1d29c3ed034155fd779ce6f44fb13"
+      }
+    ]
+  },
+  {
+    "sha": "e0bc5a7361b1d29c3ed034155fd779ce6f44fb13",
+    "commit": {
+      "author": {
+        "name": "Bryan English",
+        "email": "bryan@bryanenglish.com",
+        "date": "2016-10-26T22:21:36Z"
+      },
+      "committer": {
+        "name": "Anna Henningsen",
+        "email": "anna@addaleax.net",
+        "date": "2017-03-24T23:33:20Z"
+      },
+      "message": "process: maintain constructor descriptor\n\nUse the original property descriptor instead of just taking the value,\nwhich would, by default, be non-writable and non-configurable.\n\nPR-URL: https://github.com/nodejs/node/pull/9306\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Michaël Zasso <targos@protonmail.com>",
+      "tree": {
+        "sha": "4adc41ee23c2b750639264a1bb7f958da27ad56f",
+        "url": "https://api.github.com/repos/nodejs/node/git/trees/4adc41ee23c2b750639264a1bb7f958da27ad56f"
+      },
+      "url": "https://api.github.com/repos/nodejs/node/git/commits/e0bc5a7361b1d29c3ed034155fd779ce6f44fb13",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/nodejs/node/commits/e0bc5a7361b1d29c3ed034155fd779ce6f44fb13",
+    "html_url": "https://github.com/nodejs/node/commit/e0bc5a7361b1d29c3ed034155fd779ce6f44fb13",
+    "comments_url": "https://api.github.com/repos/nodejs/node/commits/e0bc5a7361b1d29c3ed034155fd779ce6f44fb13/comments",
+    "author": {
+      "login": "bengl",
+      "id": 110455,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/110455?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bengl",
+      "html_url": "https://github.com/bengl",
+      "followers_url": "https://api.github.com/users/bengl/followers",
+      "following_url": "https://api.github.com/users/bengl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/bengl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bengl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bengl/subscriptions",
+      "organizations_url": "https://api.github.com/users/bengl/orgs",
+      "repos_url": "https://api.github.com/users/bengl/repos",
+      "events_url": "https://api.github.com/users/bengl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bengl/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "addaleax",
+      "id": 899444,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/899444?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/addaleax",
+      "html_url": "https://github.com/addaleax",
+      "followers_url": "https://api.github.com/users/addaleax/followers",
+      "following_url": "https://api.github.com/users/addaleax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/addaleax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/addaleax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/addaleax/subscriptions",
+      "organizations_url": "https://api.github.com/users/addaleax/orgs",
+      "repos_url": "https://api.github.com/users/addaleax/repos",
+      "events_url": "https://api.github.com/users/addaleax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/addaleax/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2141d374527337f7e1c74c9efad217b017d945cf",
+        "url": "https://api.github.com/repos/nodejs/node/commits/2141d374527337f7e1c74c9efad217b017d945cf",
+        "html_url": "https://github.com/nodejs/node/commit/2141d374527337f7e1c74c9efad217b017d945cf"
+      }
+    ]
+  },
+  {
+    "sha": "2141d374527337f7e1c74c9efad217b017d945cf",
+    "commit": {
+      "author": {
+        "name": "Chris Burkhart",
+        "email": "christide@christide.com",
+        "date": "2016-12-21T17:32:21Z"
+      },
+      "committer": {
+        "name": "James M Snell",
+        "email": "jasnell@gmail.com",
+        "date": "2017-03-24T23:07:35Z"
+      },
+      "message": "events: update and clarify error message\n\nUpdate error message that's thrown when no error listeners are attached\nto an emitter.\n\nPR-URL: https://github.com/nodejs/node/pull/10387\nReviewed-By: Sam Roberts <vieuxtech@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Italo A. Casas <me@italoacasas.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Michaël Zasso <targos@protonmail.com>",
+      "tree": {
+        "sha": "4c26cafce830334439a2dd786e3e10e45dd7bea6",
+        "url": "https://api.github.com/repos/nodejs/node/git/trees/4c26cafce830334439a2dd786e3e10e45dd7bea6"
+      },
+      "url": "https://api.github.com/repos/nodejs/node/git/commits/2141d374527337f7e1c74c9efad217b017d945cf",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/nodejs/node/commits/2141d374527337f7e1c74c9efad217b017d945cf",
+    "html_url": "https://github.com/nodejs/node/commit/2141d374527337f7e1c74c9efad217b017d945cf",
+    "comments_url": "https://api.github.com/repos/nodejs/node/commits/2141d374527337f7e1c74c9efad217b017d945cf/comments",
+    "author": {
+      "login": "ctide",
+      "id": 53454,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/53454?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ctide",
+      "html_url": "https://github.com/ctide",
+      "followers_url": "https://api.github.com/users/ctide/followers",
+      "following_url": "https://api.github.com/users/ctide/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ctide/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ctide/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ctide/subscriptions",
+      "organizations_url": "https://api.github.com/users/ctide/orgs",
+      "repos_url": "https://api.github.com/users/ctide/repos",
+      "events_url": "https://api.github.com/users/ctide/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ctide/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jasnell",
+      "id": 439929,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/439929?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jasnell",
+      "html_url": "https://github.com/jasnell",
+      "followers_url": "https://api.github.com/users/jasnell/followers",
+      "following_url": "https://api.github.com/users/jasnell/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jasnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jasnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jasnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/jasnell/orgs",
+      "repos_url": "https://api.github.com/users/jasnell/repos",
+      "events_url": "https://api.github.com/users/jasnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jasnell/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "cfc8422a68c92808a4a2aee374623bebc768522a",
+        "url": "https://api.github.com/repos/nodejs/node/commits/cfc8422a68c92808a4a2aee374623bebc768522a",
+        "html_url": "https://github.com/nodejs/node/commit/cfc8422a68c92808a4a2aee374623bebc768522a"
+      }
+    ]
+  },
+  {
+    "sha": "cfc8422a68c92808a4a2aee374623bebc768522a",
+    "commit": {
+      "author": {
+        "name": "Timothy Gu",
+        "email": "timothygu99@gmail.com",
+        "date": "2017-03-19T23:11:10Z"
+      },
+      "committer": {
+        "name": "Timothy Gu",
+        "email": "timothygu99@gmail.com",
+        "date": "2017-03-24T22:25:49Z"
+      },
+      "message": "lib: use Object.create(null) directly\n\nAfter V8 5.6, using Object.create(null) directly is now faster than\nusing a constructor for map-like objects.\n\nPR-URL: https://github.com/nodejs/node/pull/11930\nRefs: https://github.com/emberjs/ember.js/issues/15001\nRefs: https://crrev.com/532c16eca071df3ec8eed394dcebb932ef584ee6\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>",
+      "tree": {
+        "sha": "a5ca63de5fee40991d49a5731fe32e3072f097b0",
+        "url": "https://api.github.com/repos/nodejs/node/git/trees/a5ca63de5fee40991d49a5731fe32e3072f097b0"
+      },
+      "url": "https://api.github.com/repos/nodejs/node/git/commits/cfc8422a68c92808a4a2aee374623bebc768522a",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/nodejs/node/commits/cfc8422a68c92808a4a2aee374623bebc768522a",
+    "html_url": "https://github.com/nodejs/node/commit/cfc8422a68c92808a4a2aee374623bebc768522a",
+    "comments_url": "https://api.github.com/repos/nodejs/node/commits/cfc8422a68c92808a4a2aee374623bebc768522a/comments",
+    "author": {
+      "login": "TimothyGu",
+      "id": 1538624,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1538624?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/TimothyGu",
+      "html_url": "https://github.com/TimothyGu",
+      "followers_url": "https://api.github.com/users/TimothyGu/followers",
+      "following_url": "https://api.github.com/users/TimothyGu/following{/other_user}",
+      "gists_url": "https://api.github.com/users/TimothyGu/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/TimothyGu/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/TimothyGu/subscriptions",
+      "organizations_url": "https://api.github.com/users/TimothyGu/orgs",
+      "repos_url": "https://api.github.com/users/TimothyGu/repos",
+      "events_url": "https://api.github.com/users/TimothyGu/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/TimothyGu/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "TimothyGu",
+      "id": 1538624,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1538624?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/TimothyGu",
+      "html_url": "https://github.com/TimothyGu",
+      "followers_url": "https://api.github.com/users/TimothyGu/followers",
+      "following_url": "https://api.github.com/users/TimothyGu/following{/other_user}",
+      "gists_url": "https://api.github.com/users/TimothyGu/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/TimothyGu/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/TimothyGu/subscriptions",
+      "organizations_url": "https://api.github.com/users/TimothyGu/orgs",
+      "repos_url": "https://api.github.com/users/TimothyGu/repos",
+      "events_url": "https://api.github.com/users/TimothyGu/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/TimothyGu/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "14a91957f8bce2d614ec361f982aa56378f1c24e",
+        "url": "https://api.github.com/repos/nodejs/node/commits/14a91957f8bce2d614ec361f982aa56378f1c24e",
+        "html_url": "https://github.com/nodejs/node/commit/14a91957f8bce2d614ec361f982aa56378f1c24e"
+      }
+    ]
+  },
+  {
+    "sha": "14a91957f8bce2d614ec361f982aa56378f1c24e",
+    "commit": {
+      "author": {
+        "name": "Timothy Gu",
+        "email": "timothygu99@gmail.com",
+        "date": "2017-03-22T18:39:13Z"
+      },
+      "committer": {
+        "name": "Timothy Gu",
+        "email": "timothygu99@gmail.com",
+        "date": "2017-03-24T22:25:40Z"
+      },
+      "message": "url: use a class for WHATWG url[context]\n\nThe object is used as a structure, not as a map, which `StorageObject`\nwas designed for.\n\nPR-URL: https://github.com/nodejs/node/pull/11930\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>",
+      "tree": {
+        "sha": "8b248c4973905331de74787f2ed33fedd2711e16",
+        "url": "https://api.github.com/repos/nodejs/node/git/trees/8b248c4973905331de74787f2ed33fedd2711e16"
+      },
+      "url": "https://api.github.com/repos/nodejs/node/git/commits/14a91957f8bce2d614ec361f982aa56378f1c24e",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/nodejs/node/commits/14a91957f8bce2d614ec361f982aa56378f1c24e",
+    "html_url": "https://github.com/nodejs/node/commit/14a91957f8bce2d614ec361f982aa56378f1c24e",
+    "comments_url": "https://api.github.com/repos/nodejs/node/commits/14a91957f8bce2d614ec361f982aa56378f1c24e/comments",
+    "author": {
+      "login": "TimothyGu",
+      "id": 1538624,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1538624?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/TimothyGu",
+      "html_url": "https://github.com/TimothyGu",
+      "followers_url": "https://api.github.com/users/TimothyGu/followers",
+      "following_url": "https://api.github.com/users/TimothyGu/following{/other_user}",
+      "gists_url": "https://api.github.com/users/TimothyGu/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/TimothyGu/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/TimothyGu/subscriptions",
+      "organizations_url": "https://api.github.com/users/TimothyGu/orgs",
+      "repos_url": "https://api.github.com/users/TimothyGu/repos",
+      "events_url": "https://api.github.com/users/TimothyGu/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/TimothyGu/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "TimothyGu",
+      "id": 1538624,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1538624?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/TimothyGu",
+      "html_url": "https://github.com/TimothyGu",
+      "followers_url": "https://api.github.com/users/TimothyGu/followers",
+      "following_url": "https://api.github.com/users/TimothyGu/following{/other_user}",
+      "gists_url": "https://api.github.com/users/TimothyGu/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/TimothyGu/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/TimothyGu/subscriptions",
+      "organizations_url": "https://api.github.com/users/TimothyGu/orgs",
+      "repos_url": "https://api.github.com/users/TimothyGu/repos",
+      "events_url": "https://api.github.com/users/TimothyGu/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/TimothyGu/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a6e69f8c08958a0909a60b53d048b21d181e90e5",
+        "url": "https://api.github.com/repos/nodejs/node/commits/a6e69f8c08958a0909a60b53d048b21d181e90e5",
+        "html_url": "https://github.com/nodejs/node/commit/a6e69f8c08958a0909a60b53d048b21d181e90e5"
+      }
+    ]
+  },
+  {
+    "sha": "a6e69f8c08958a0909a60b53d048b21d181e90e5",
+    "commit": {
+      "author": {
+        "name": "Timothy Gu",
+        "email": "timothygu99@gmail.com",
+        "date": "2017-03-19T23:05:55Z"
+      },
+      "committer": {
+        "name": "Timothy Gu",
+        "email": "timothygu99@gmail.com",
+        "date": "2017-03-24T22:25:14Z"
+      },
+      "message": "benchmark: add more options to map-bench\n\nPR-URL: https://github.com/nodejs/node/pull/11930\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>",
+      "tree": {
+        "sha": "b9342ce8fee3d0a6a298d5127d0503afe676b8e1",
+        "url": "https://api.github.com/repos/nodejs/node/git/trees/b9342ce8fee3d0a6a298d5127d0503afe676b8e1"
+      },
+      "url": "https://api.github.com/repos/nodejs/node/git/commits/a6e69f8c08958a0909a60b53d048b21d181e90e5",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/nodejs/node/commits/a6e69f8c08958a0909a60b53d048b21d181e90e5",
+    "html_url": "https://github.com/nodejs/node/commit/a6e69f8c08958a0909a60b53d048b21d181e90e5",
+    "comments_url": "https://api.github.com/repos/nodejs/node/commits/a6e69f8c08958a0909a60b53d048b21d181e90e5/comments",
+    "author": {
+      "login": "TimothyGu",
+      "id": 1538624,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1538624?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/TimothyGu",
+      "html_url": "https://github.com/TimothyGu",
+      "followers_url": "https://api.github.com/users/TimothyGu/followers",
+      "following_url": "https://api.github.com/users/TimothyGu/following{/other_user}",
+      "gists_url": "https://api.github.com/users/TimothyGu/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/TimothyGu/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/TimothyGu/subscriptions",
+      "organizations_url": "https://api.github.com/users/TimothyGu/orgs",
+      "repos_url": "https://api.github.com/users/TimothyGu/repos",
+      "events_url": "https://api.github.com/users/TimothyGu/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/TimothyGu/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "TimothyGu",
+      "id": 1538624,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1538624?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/TimothyGu",
+      "html_url": "https://github.com/TimothyGu",
+      "followers_url": "https://api.github.com/users/TimothyGu/followers",
+      "following_url": "https://api.github.com/users/TimothyGu/following{/other_user}",
+      "gists_url": "https://api.github.com/users/TimothyGu/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/TimothyGu/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/TimothyGu/subscriptions",
+      "organizations_url": "https://api.github.com/users/TimothyGu/orgs",
+      "repos_url": "https://api.github.com/users/TimothyGu/repos",
+      "events_url": "https://api.github.com/users/TimothyGu/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/TimothyGu/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d9b0e4c729fedfe5369ada4229fd170bd6dc7e2f",
+        "url": "https://api.github.com/repos/nodejs/node/commits/d9b0e4c729fedfe5369ada4229fd170bd6dc7e2f",
+        "html_url": "https://github.com/nodejs/node/commit/d9b0e4c729fedfe5369ada4229fd170bd6dc7e2f"
+      }
+    ]
+  },
+  {
+    "sha": "d9b0e4c729fedfe5369ada4229fd170bd6dc7e2f",
+    "commit": {
+      "author": {
+        "name": "Sorin Baltateanu",
+        "email": "sorin.baltateanu@intel.com",
+        "date": "2016-07-21T11:08:28Z"
+      },
+      "committer": {
+        "name": "James M Snell",
+        "email": "jasnell@gmail.com",
+        "date": "2017-03-24T22:21:21Z"
+      },
+      "message": "benchmark: repair the fs/readfile benchmark\n\nPR-URL: https://github.com/nodejs/node/pull/7818\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: James M Snell <jasnell@gmail.com>",
+      "tree": {
+        "sha": "48d0bfcb929544b0d7717af2900b4fa6abd33469",
+        "url": "https://api.github.com/repos/nodejs/node/git/trees/48d0bfcb929544b0d7717af2900b4fa6abd33469"
+      },
+      "url": "https://api.github.com/repos/nodejs/node/git/commits/d9b0e4c729fedfe5369ada4229fd170bd6dc7e2f",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/nodejs/node/commits/d9b0e4c729fedfe5369ada4229fd170bd6dc7e2f",
+    "html_url": "https://github.com/nodejs/node/commit/d9b0e4c729fedfe5369ada4229fd170bd6dc7e2f",
+    "comments_url": "https://api.github.com/repos/nodejs/node/commits/d9b0e4c729fedfe5369ada4229fd170bd6dc7e2f/comments",
+    "author": null,
+    "committer": {
+      "login": "jasnell",
+      "id": 439929,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/439929?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jasnell",
+      "html_url": "https://github.com/jasnell",
+      "followers_url": "https://api.github.com/users/jasnell/followers",
+      "following_url": "https://api.github.com/users/jasnell/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jasnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jasnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jasnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/jasnell/orgs",
+      "repos_url": "https://api.github.com/users/jasnell/repos",
+      "events_url": "https://api.github.com/users/jasnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jasnell/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a45c2db4b67a95f40f66852dd35e45ae9677df05",
+        "url": "https://api.github.com/repos/nodejs/node/commits/a45c2db4b67a95f40f66852dd35e45ae9677df05",
+        "html_url": "https://github.com/nodejs/node/commit/a45c2db4b67a95f40f66852dd35e45ae9677df05"
+      }
+    ]
+  },
+  {
+    "sha": "a45c2db4b67a95f40f66852dd35e45ae9677df05",
+    "commit": {
+      "author": {
+        "name": "Rich Trott",
+        "email": "rtrott@gmail.com",
+        "date": "2017-03-22T04:48:21Z"
+      },
+      "committer": {
+        "name": "Rich Trott",
+        "email": "rtrott@gmail.com",
+        "date": "2017-03-24T18:14:13Z"
+      },
+      "message": "test: refactor test-cluster-disconnect\n\nReplace `process.once('exit', ...)` with `common.mustCall()`.\nRemove unneeded variable in loop declaration.\n\nPR-URL: https://github.com/nodejs/node/pull/11981\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Michaël Zasso <targos@protonmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Santiago Gimeno <santiago.gimeno@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>",
+      "tree": {
+        "sha": "3f065bfd2efbb374b5fcb2076c3b5ca2c8b1486d",
+        "url": "https://api.github.com/repos/nodejs/node/git/trees/3f065bfd2efbb374b5fcb2076c3b5ca2c8b1486d"
+      },
+      "url": "https://api.github.com/repos/nodejs/node/git/commits/a45c2db4b67a95f40f66852dd35e45ae9677df05",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/nodejs/node/commits/a45c2db4b67a95f40f66852dd35e45ae9677df05",
+    "html_url": "https://github.com/nodejs/node/commit/a45c2db4b67a95f40f66852dd35e45ae9677df05",
+    "comments_url": "https://api.github.com/repos/nodejs/node/commits/a45c2db4b67a95f40f66852dd35e45ae9677df05/comments",
+    "author": {
+      "login": "Trott",
+      "id": 718899,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/718899?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Trott",
+      "html_url": "https://github.com/Trott",
+      "followers_url": "https://api.github.com/users/Trott/followers",
+      "following_url": "https://api.github.com/users/Trott/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Trott/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Trott/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Trott/subscriptions",
+      "organizations_url": "https://api.github.com/users/Trott/orgs",
+      "repos_url": "https://api.github.com/users/Trott/repos",
+      "events_url": "https://api.github.com/users/Trott/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Trott/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "Trott",
+      "id": 718899,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/718899?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Trott",
+      "html_url": "https://github.com/Trott",
+      "followers_url": "https://api.github.com/users/Trott/followers",
+      "following_url": "https://api.github.com/users/Trott/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Trott/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Trott/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Trott/subscriptions",
+      "organizations_url": "https://api.github.com/users/Trott/orgs",
+      "repos_url": "https://api.github.com/users/Trott/repos",
+      "events_url": "https://api.github.com/users/Trott/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Trott/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9ff7ed23cd822dc810ddd99d63d4e2ca68635474",
+        "url": "https://api.github.com/repos/nodejs/node/commits/9ff7ed23cd822dc810ddd99d63d4e2ca68635474",
+        "html_url": "https://github.com/nodejs/node/commit/9ff7ed23cd822dc810ddd99d63d4e2ca68635474"
+      }
+    ]
+  },
+  {
+    "sha": "9ff7ed23cd822dc810ddd99d63d4e2ca68635474",
+    "commit": {
+      "author": {
+        "name": "Ben Noordhuis",
+        "email": "info@bnoordhuis.nl",
+        "date": "2017-03-21T10:30:59Z"
+      },
+      "committer": {
+        "name": "James M Snell",
+        "email": "jasnell@gmail.com",
+        "date": "2017-03-24T16:19:09Z"
+      },
+      "message": "lib: fix event race condition with -e\n\nCommit c5b07d4 (\"lib: fix beforeExit not working with -e\") runs the\nto-be-evaluated code at a later time than before because it switches\nfrom `process.nextTick()` to `setImmediate()`.\n\nIt affects `-e 'process.on(\"message\", ...)'` because there is now a\nlarger time gap between startup and attaching the event listener,\nincreasing the chances of missing early messages.  I'm reasonably\nsure `process.nextTick()` was also susceptible to that, only less\npronounced.\n\nAvoid the problem altogether by evaluating the code synchronously.\nHarmonizes the logic with `Module.runMain()` from lib/module.js\nwhich also calls `process._tickCallback()` afterwards.\n\nPR-URL: https://github.com/nodejs/node/pull/11958\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Jeremiah Senkpiel <fishrock123@rocketmail.com>\nReviewed-By: Michael Dawson <michael_dawson@ca.ibm.com>\nReviewed-By: Daijiro Wachi <daijiro.wachi@gmail.com>",
+      "tree": {
+        "sha": "b48ac0c73921cbbe0b69dcea2c2e06b0a859eaa6",
+        "url": "https://api.github.com/repos/nodejs/node/git/trees/b48ac0c73921cbbe0b69dcea2c2e06b0a859eaa6"
+      },
+      "url": "https://api.github.com/repos/nodejs/node/git/commits/9ff7ed23cd822dc810ddd99d63d4e2ca68635474",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/nodejs/node/commits/9ff7ed23cd822dc810ddd99d63d4e2ca68635474",
+    "html_url": "https://github.com/nodejs/node/commit/9ff7ed23cd822dc810ddd99d63d4e2ca68635474",
+    "comments_url": "https://api.github.com/repos/nodejs/node/commits/9ff7ed23cd822dc810ddd99d63d4e2ca68635474/comments",
+    "author": {
+      "login": "bnoordhuis",
+      "id": 275871,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/275871?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bnoordhuis",
+      "html_url": "https://github.com/bnoordhuis",
+      "followers_url": "https://api.github.com/users/bnoordhuis/followers",
+      "following_url": "https://api.github.com/users/bnoordhuis/following{/other_user}",
+      "gists_url": "https://api.github.com/users/bnoordhuis/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bnoordhuis/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bnoordhuis/subscriptions",
+      "organizations_url": "https://api.github.com/users/bnoordhuis/orgs",
+      "repos_url": "https://api.github.com/users/bnoordhuis/repos",
+      "events_url": "https://api.github.com/users/bnoordhuis/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bnoordhuis/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jasnell",
+      "id": 439929,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/439929?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jasnell",
+      "html_url": "https://github.com/jasnell",
+      "followers_url": "https://api.github.com/users/jasnell/followers",
+      "following_url": "https://api.github.com/users/jasnell/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jasnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jasnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jasnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/jasnell/orgs",
+      "repos_url": "https://api.github.com/users/jasnell/repos",
+      "events_url": "https://api.github.com/users/jasnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jasnell/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "30f1e8ea041c97370534b9d26eef8f25da18a75c",
+        "url": "https://api.github.com/repos/nodejs/node/commits/30f1e8ea041c97370534b9d26eef8f25da18a75c",
+        "html_url": "https://github.com/nodejs/node/commit/30f1e8ea041c97370534b9d26eef8f25da18a75c"
+      }
+    ]
+  },
+  {
+    "sha": "30f1e8ea041c97370534b9d26eef8f25da18a75c",
+    "commit": {
+      "author": {
+        "name": "Luca Maraschi",
+        "email": "luca.maraschi@gmail.com",
+        "date": "2017-03-21T14:47:25Z"
+      },
+      "committer": {
+        "name": "James M Snell",
+        "email": "jasnell@gmail.com",
+        "date": "2017-03-24T16:14:10Z"
+      },
+      "message": "test: invalid chars in http client path\n\nThis test adds coverage for all the characters which are considered\ninvalid in a http path.\n\nPR-URL: https://github.com/nodejs/node/pull/11964\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>",
+      "tree": {
+        "sha": "22ae9e2258b06ea0d11870fb7a4419d9bd229dba",
+        "url": "https://api.github.com/repos/nodejs/node/git/trees/22ae9e2258b06ea0d11870fb7a4419d9bd229dba"
+      },
+      "url": "https://api.github.com/repos/nodejs/node/git/commits/30f1e8ea041c97370534b9d26eef8f25da18a75c",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/nodejs/node/commits/30f1e8ea041c97370534b9d26eef8f25da18a75c",
+    "html_url": "https://github.com/nodejs/node/commit/30f1e8ea041c97370534b9d26eef8f25da18a75c",
+    "comments_url": "https://api.github.com/repos/nodejs/node/commits/30f1e8ea041c97370534b9d26eef8f25da18a75c/comments",
+    "author": {
+      "login": "lucamaraschi",
+      "id": 332968,
+      "avatar_url": "https://avatars0.githubusercontent.com/u/332968?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lucamaraschi",
+      "html_url": "https://github.com/lucamaraschi",
+      "followers_url": "https://api.github.com/users/lucamaraschi/followers",
+      "following_url": "https://api.github.com/users/lucamaraschi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/lucamaraschi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/lucamaraschi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/lucamaraschi/subscriptions",
+      "organizations_url": "https://api.github.com/users/lucamaraschi/orgs",
+      "repos_url": "https://api.github.com/users/lucamaraschi/repos",
+      "events_url": "https://api.github.com/users/lucamaraschi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/lucamaraschi/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jasnell",
+      "id": 439929,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/439929?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jasnell",
+      "html_url": "https://github.com/jasnell",
+      "followers_url": "https://api.github.com/users/jasnell/followers",
+      "following_url": "https://api.github.com/users/jasnell/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jasnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jasnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jasnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/jasnell/orgs",
+      "repos_url": "https://api.github.com/users/jasnell/repos",
+      "events_url": "https://api.github.com/users/jasnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jasnell/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "89d9c3f4a7a552caccf98ea52e4800472bff68ef",
+        "url": "https://api.github.com/repos/nodejs/node/commits/89d9c3f4a7a552caccf98ea52e4800472bff68ef",
+        "html_url": "https://github.com/nodejs/node/commit/89d9c3f4a7a552caccf98ea52e4800472bff68ef"
+      }
+    ]
+  },
+  {
+    "sha": "89d9c3f4a7a552caccf98ea52e4800472bff68ef",
+    "commit": {
+      "author": {
+        "name": "Nick Peleh",
+        "email": "nick.peleh@gmail.com",
+        "date": "2017-03-21T17:50:05Z"
+      },
+      "committer": {
+        "name": "James M Snell",
+        "email": "jasnell@gmail.com",
+        "date": "2017-03-24T16:10:19Z"
+      },
+      "message": "test: improve test-vm-cached-data.js\n\n* verify error message by adding 2nd argument to throws in test-assert\n\nPR-URL: https://github.com/nodejs/node/pull/11974\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Daijiro Wachi <daijiro.wachi@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>",
+      "tree": {
+        "sha": "1f2f7d5266edbc83afa27c0e1d8623923261ea3e",
+        "url": "https://api.github.com/repos/nodejs/node/git/trees/1f2f7d5266edbc83afa27c0e1d8623923261ea3e"
+      },
+      "url": "https://api.github.com/repos/nodejs/node/git/commits/89d9c3f4a7a552caccf98ea52e4800472bff68ef",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/nodejs/node/commits/89d9c3f4a7a552caccf98ea52e4800472bff68ef",
+    "html_url": "https://github.com/nodejs/node/commit/89d9c3f4a7a552caccf98ea52e4800472bff68ef",
+    "comments_url": "https://api.github.com/repos/nodejs/node/commits/89d9c3f4a7a552caccf98ea52e4800472bff68ef/comments",
+    "author": {
+      "login": "nickpeleh",
+      "id": 9514958,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/9514958?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nickpeleh",
+      "html_url": "https://github.com/nickpeleh",
+      "followers_url": "https://api.github.com/users/nickpeleh/followers",
+      "following_url": "https://api.github.com/users/nickpeleh/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nickpeleh/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nickpeleh/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nickpeleh/subscriptions",
+      "organizations_url": "https://api.github.com/users/nickpeleh/orgs",
+      "repos_url": "https://api.github.com/users/nickpeleh/repos",
+      "events_url": "https://api.github.com/users/nickpeleh/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nickpeleh/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jasnell",
+      "id": 439929,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/439929?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jasnell",
+      "html_url": "https://github.com/jasnell",
+      "followers_url": "https://api.github.com/users/jasnell/followers",
+      "following_url": "https://api.github.com/users/jasnell/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jasnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jasnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jasnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/jasnell/orgs",
+      "repos_url": "https://api.github.com/users/jasnell/repos",
+      "events_url": "https://api.github.com/users/jasnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jasnell/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0d000ca51f4c274a4786f28019032eca9b74146f",
+        "url": "https://api.github.com/repos/nodejs/node/commits/0d000ca51f4c274a4786f28019032eca9b74146f",
+        "html_url": "https://github.com/nodejs/node/commit/0d000ca51f4c274a4786f28019032eca9b74146f"
+      }
+    ]
+  },
+  {
+    "sha": "0d000ca51f4c274a4786f28019032eca9b74146f",
+    "commit": {
+      "author": {
+        "name": "Rich Trott",
+        "email": "rtrott@gmail.com",
+        "date": "2017-03-22T00:07:23Z"
+      },
+      "committer": {
+        "name": "James M Snell",
+        "email": "jasnell@gmail.com",
+        "date": "2017-03-24T16:03:25Z"
+      },
+      "message": "test: add minimal test for net benchmarks\n\nCurrently, benchmark code is not exercised at all in CI. This adds a\nminimal test for net benchmarks. If this is deemed acceptable, similar\nminimal tests for other benchmarks can be written. Additionally, as\nissues and edge cases are uncovered, checks for them can be added.\n\nPR-URL: https://github.com/nodejs/node/pull/11979\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Joyee Cheung <joyeec9h3@gmail.com>",
+      "tree": {
+        "sha": "25efe77ea11db8e51c5e25f737d1f7168dca262e",
+        "url": "https://api.github.com/repos/nodejs/node/git/trees/25efe77ea11db8e51c5e25f737d1f7168dca262e"
+      },
+      "url": "https://api.github.com/repos/nodejs/node/git/commits/0d000ca51f4c274a4786f28019032eca9b74146f",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/nodejs/node/commits/0d000ca51f4c274a4786f28019032eca9b74146f",
+    "html_url": "https://github.com/nodejs/node/commit/0d000ca51f4c274a4786f28019032eca9b74146f",
+    "comments_url": "https://api.github.com/repos/nodejs/node/commits/0d000ca51f4c274a4786f28019032eca9b74146f/comments",
+    "author": {
+      "login": "Trott",
+      "id": 718899,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/718899?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Trott",
+      "html_url": "https://github.com/Trott",
+      "followers_url": "https://api.github.com/users/Trott/followers",
+      "following_url": "https://api.github.com/users/Trott/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Trott/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Trott/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Trott/subscriptions",
+      "organizations_url": "https://api.github.com/users/Trott/orgs",
+      "repos_url": "https://api.github.com/users/Trott/repos",
+      "events_url": "https://api.github.com/users/Trott/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Trott/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jasnell",
+      "id": 439929,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/439929?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jasnell",
+      "html_url": "https://github.com/jasnell",
+      "followers_url": "https://api.github.com/users/jasnell/followers",
+      "following_url": "https://api.github.com/users/jasnell/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jasnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jasnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jasnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/jasnell/orgs",
+      "repos_url": "https://api.github.com/users/jasnell/repos",
+      "events_url": "https://api.github.com/users/jasnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jasnell/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "abb0bdd53fa6d831de43119fb1d5560afc495677",
+        "url": "https://api.github.com/repos/nodejs/node/commits/abb0bdd53fa6d831de43119fb1d5560afc495677",
+        "html_url": "https://github.com/nodejs/node/commit/abb0bdd53fa6d831de43119fb1d5560afc495677"
+      }
+    ]
+  },
+  {
+    "sha": "abb0bdd53fa6d831de43119fb1d5560afc495677",
+    "commit": {
+      "author": {
+        "name": "Yuta Hiroto",
+        "email": "git@about-hiroppy.com",
+        "date": "2017-03-23T01:57:26Z"
+      },
+      "committer": {
+        "name": "Yuta Hiroto",
+        "email": "git@about-hiroppy.com",
+        "date": "2017-03-24T15:58:11Z"
+      },
+      "message": "test: add test for url\n\nPR-URL: https://github.com/nodejs/node/pull/11999\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Joyee Cheung <joyeec9h3@gmail.com>\nReviewed-By: Prince John Wesley <princejohnwesley@gmail.com>",
+      "tree": {
+        "sha": "fa12edd209841c9ffa0b7ec50148272d7bc0eb36",
+        "url": "https://api.github.com/repos/nodejs/node/git/trees/fa12edd209841c9ffa0b7ec50148272d7bc0eb36"
+      },
+      "url": "https://api.github.com/repos/nodejs/node/git/commits/abb0bdd53fa6d831de43119fb1d5560afc495677",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/nodejs/node/commits/abb0bdd53fa6d831de43119fb1d5560afc495677",
+    "html_url": "https://github.com/nodejs/node/commit/abb0bdd53fa6d831de43119fb1d5560afc495677",
+    "comments_url": "https://api.github.com/repos/nodejs/node/commits/abb0bdd53fa6d831de43119fb1d5560afc495677/comments",
+    "author": {
+      "login": "abouthiroppy",
+      "id": 3367801,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/3367801?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/abouthiroppy",
+      "html_url": "https://github.com/abouthiroppy",
+      "followers_url": "https://api.github.com/users/abouthiroppy/followers",
+      "following_url": "https://api.github.com/users/abouthiroppy/following{/other_user}",
+      "gists_url": "https://api.github.com/users/abouthiroppy/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/abouthiroppy/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/abouthiroppy/subscriptions",
+      "organizations_url": "https://api.github.com/users/abouthiroppy/orgs",
+      "repos_url": "https://api.github.com/users/abouthiroppy/repos",
+      "events_url": "https://api.github.com/users/abouthiroppy/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/abouthiroppy/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "abouthiroppy",
+      "id": 3367801,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/3367801?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/abouthiroppy",
+      "html_url": "https://github.com/abouthiroppy",
+      "followers_url": "https://api.github.com/users/abouthiroppy/followers",
+      "following_url": "https://api.github.com/users/abouthiroppy/following{/other_user}",
+      "gists_url": "https://api.github.com/users/abouthiroppy/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/abouthiroppy/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/abouthiroppy/subscriptions",
+      "organizations_url": "https://api.github.com/users/abouthiroppy/orgs",
+      "repos_url": "https://api.github.com/users/abouthiroppy/repos",
+      "events_url": "https://api.github.com/users/abouthiroppy/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/abouthiroppy/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e40ac30e05be0f086e7a0dba18435af3f6386a0f",
+        "url": "https://api.github.com/repos/nodejs/node/commits/e40ac30e05be0f086e7a0dba18435af3f6386a0f",
+        "html_url": "https://github.com/nodejs/node/commit/e40ac30e05be0f086e7a0dba18435af3f6386a0f"
+      }
+    ]
+  },
+  {
+    "sha": "e40ac30e05be0f086e7a0dba18435af3f6386a0f",
+    "commit": {
+      "author": {
+        "name": "Anna Henningsen",
+        "email": "anna@addaleax.net",
+        "date": "2017-03-22T06:33:31Z"
+      },
+      "committer": {
+        "name": "James M Snell",
+        "email": "jasnell@gmail.com",
+        "date": "2017-03-24T15:50:13Z"
+      },
+      "message": "doc: document extent of crypto Uint8Array support\n\nPR-URL: https://github.com/nodejs/node/pull/11982\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>",
+      "tree": {
+        "sha": "d26f5cc481d383b47a6bca9f21e6f450cda49020",
+        "url": "https://api.github.com/repos/nodejs/node/git/trees/d26f5cc481d383b47a6bca9f21e6f450cda49020"
+      },
+      "url": "https://api.github.com/repos/nodejs/node/git/commits/e40ac30e05be0f086e7a0dba18435af3f6386a0f",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/nodejs/node/commits/e40ac30e05be0f086e7a0dba18435af3f6386a0f",
+    "html_url": "https://github.com/nodejs/node/commit/e40ac30e05be0f086e7a0dba18435af3f6386a0f",
+    "comments_url": "https://api.github.com/repos/nodejs/node/commits/e40ac30e05be0f086e7a0dba18435af3f6386a0f/comments",
+    "author": {
+      "login": "addaleax",
+      "id": 899444,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/899444?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/addaleax",
+      "html_url": "https://github.com/addaleax",
+      "followers_url": "https://api.github.com/users/addaleax/followers",
+      "following_url": "https://api.github.com/users/addaleax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/addaleax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/addaleax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/addaleax/subscriptions",
+      "organizations_url": "https://api.github.com/users/addaleax/orgs",
+      "repos_url": "https://api.github.com/users/addaleax/repos",
+      "events_url": "https://api.github.com/users/addaleax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/addaleax/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jasnell",
+      "id": 439929,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/439929?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jasnell",
+      "html_url": "https://github.com/jasnell",
+      "followers_url": "https://api.github.com/users/jasnell/followers",
+      "following_url": "https://api.github.com/users/jasnell/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jasnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jasnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jasnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/jasnell/orgs",
+      "repos_url": "https://api.github.com/users/jasnell/repos",
+      "events_url": "https://api.github.com/users/jasnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jasnell/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4929d12e999aaab08b0ed90e8a6080e139ca62d1",
+        "url": "https://api.github.com/repos/nodejs/node/commits/4929d12e999aaab08b0ed90e8a6080e139ca62d1",
+        "html_url": "https://github.com/nodejs/node/commit/4929d12e999aaab08b0ed90e8a6080e139ca62d1"
+      }
+    ]
+  },
+  {
+    "sha": "4929d12e999aaab08b0ed90e8a6080e139ca62d1",
+    "commit": {
+      "author": {
+        "name": "DavidCai",
+        "email": "davidcai1993@yahoo.com",
+        "date": "2017-03-22T14:08:02Z"
+      },
+      "committer": {
+        "name": "James M Snell",
+        "email": "jasnell@gmail.com",
+        "date": "2017-03-24T15:46:05Z"
+      },
+      "message": "test: add internal/socket_list tests\n\nPR-URL: https://github.com/nodejs/node/pull/11989\nReviewed-By: James M Snell <jasnell@gmail.com>",
+      "tree": {
+        "sha": "cddf253818f3b3639130007958917715fe2ffd67",
+        "url": "https://api.github.com/repos/nodejs/node/git/trees/cddf253818f3b3639130007958917715fe2ffd67"
+      },
+      "url": "https://api.github.com/repos/nodejs/node/git/commits/4929d12e999aaab08b0ed90e8a6080e139ca62d1",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/nodejs/node/commits/4929d12e999aaab08b0ed90e8a6080e139ca62d1",
+    "html_url": "https://github.com/nodejs/node/commit/4929d12e999aaab08b0ed90e8a6080e139ca62d1",
+    "comments_url": "https://api.github.com/repos/nodejs/node/commits/4929d12e999aaab08b0ed90e8a6080e139ca62d1/comments",
+    "author": {
+      "login": "DavidCai1993",
+      "id": 5886475,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/5886475?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DavidCai1993",
+      "html_url": "https://github.com/DavidCai1993",
+      "followers_url": "https://api.github.com/users/DavidCai1993/followers",
+      "following_url": "https://api.github.com/users/DavidCai1993/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DavidCai1993/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DavidCai1993/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DavidCai1993/subscriptions",
+      "organizations_url": "https://api.github.com/users/DavidCai1993/orgs",
+      "repos_url": "https://api.github.com/users/DavidCai1993/repos",
+      "events_url": "https://api.github.com/users/DavidCai1993/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DavidCai1993/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jasnell",
+      "id": 439929,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/439929?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jasnell",
+      "html_url": "https://github.com/jasnell",
+      "followers_url": "https://api.github.com/users/jasnell/followers",
+      "following_url": "https://api.github.com/users/jasnell/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jasnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jasnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jasnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/jasnell/orgs",
+      "repos_url": "https://api.github.com/users/jasnell/repos",
+      "events_url": "https://api.github.com/users/jasnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jasnell/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "64af398c263105653dd0ba255a078c305b28e1e9",
+        "url": "https://api.github.com/repos/nodejs/node/commits/64af398c263105653dd0ba255a078c305b28e1e9",
+        "html_url": "https://github.com/nodejs/node/commit/64af398c263105653dd0ba255a078c305b28e1e9"
+      }
+    ]
+  },
+  {
+    "sha": "64af398c263105653dd0ba255a078c305b28e1e9",
+    "commit": {
+      "author": {
+        "name": "Daniel Bevenius",
+        "email": "daniel.bevenius@gmail.com",
+        "date": "2017-03-24T14:45:46Z"
+      },
+      "committer": {
+        "name": "James M Snell",
+        "email": "jasnell@gmail.com",
+        "date": "2017-03-24T15:28:52Z"
+      },
+      "message": "doc: c++ unit test guide lines\n\nPR-URL: https://github.com/nodejs/node/pull/11956\nRef: https://github.com/nodejs/node/pull/9163\nReviewed-By: James M Snell <jasnell@gmail.com>",
+      "tree": {
+        "sha": "f7b708a56b792b400b86ee62140d077512904075",
+        "url": "https://api.github.com/repos/nodejs/node/git/trees/f7b708a56b792b400b86ee62140d077512904075"
+      },
+      "url": "https://api.github.com/repos/nodejs/node/git/commits/64af398c263105653dd0ba255a078c305b28e1e9",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/nodejs/node/commits/64af398c263105653dd0ba255a078c305b28e1e9",
+    "html_url": "https://github.com/nodejs/node/commit/64af398c263105653dd0ba255a078c305b28e1e9",
+    "comments_url": "https://api.github.com/repos/nodejs/node/commits/64af398c263105653dd0ba255a078c305b28e1e9/comments",
+    "author": {
+      "login": "danbev",
+      "id": 432351,
+      "avatar_url": "https://avatars0.githubusercontent.com/u/432351?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/danbev",
+      "html_url": "https://github.com/danbev",
+      "followers_url": "https://api.github.com/users/danbev/followers",
+      "following_url": "https://api.github.com/users/danbev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/danbev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/danbev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/danbev/subscriptions",
+      "organizations_url": "https://api.github.com/users/danbev/orgs",
+      "repos_url": "https://api.github.com/users/danbev/repos",
+      "events_url": "https://api.github.com/users/danbev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/danbev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jasnell",
+      "id": 439929,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/439929?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jasnell",
+      "html_url": "https://github.com/jasnell",
+      "followers_url": "https://api.github.com/users/jasnell/followers",
+      "following_url": "https://api.github.com/users/jasnell/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jasnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jasnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jasnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/jasnell/orgs",
+      "repos_url": "https://api.github.com/users/jasnell/repos",
+      "events_url": "https://api.github.com/users/jasnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jasnell/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6a09a69ec9d36b705e9bde2ac1a193566a702d96",
+        "url": "https://api.github.com/repos/nodejs/node/commits/6a09a69ec9d36b705e9bde2ac1a193566a702d96",
+        "html_url": "https://github.com/nodejs/node/commit/6a09a69ec9d36b705e9bde2ac1a193566a702d96"
+      }
+    ]
+  }
+]
