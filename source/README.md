@@ -1,12 +1,12 @@
-## Linking containers
+## Steps to run the project
 
-### 1. create a network
+### 1. create a network to link containers
 docker network create -d bridge --subnet 172.25.0.0/16 backendtest_network --attachable
 
 ### 2. run mongo (dbname=backendtest_rafal, collection=commits)
 docker run --network=backendtest_network --ip=172.25.3.3 -itd --name mongo -p 27017:27018 mongo
 
-### 3. build and image of Dockerfile
+### 3. build an image of Dockerfile
 docker build -t backendtest/rafal .
 
 ### 4. run the image
