@@ -34,6 +34,8 @@ ping mongo
 
 #### press ctrl-p ctrl-q to exit
 
+### manual pull of github commits
+docker exec -ti BackEndTest getcommits
 
 ### check if containers are connected to the network
 docker network inspect backendtest_network
