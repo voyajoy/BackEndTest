@@ -12,7 +12,11 @@ docker build -t backendtest/rafal .
 ### 4. run the image
 docker run --network=backendtest_network --ip=172.25.3.4 -itd --name BackEndTest -p 9000:9000 backendtest/rafal
 
-### 5. check
+### 5. run the API
+
+docker exec -ti BackEndTest revel run github.com/rafalgolarz/BackEndTest/source/api
+
+### 6. check
 open urls: 
 http://172.25.3.4:9000
 http://172.25.3.4:9000/commits
