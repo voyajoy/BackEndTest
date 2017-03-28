@@ -1,0 +1,27 @@
+{
+  "sha": "ed12ea371c5352b4b13f9f1c4e0f577fbd30bb2a",
+  "url": "https://api.github.com/repos/nodejs/node/git/commits/ed12ea371c5352b4b13f9f1c4e0f577fbd30bb2a",
+  "html_url": "https://github.com/nodejs/node/commit/ed12ea371c5352b4b13f9f1c4e0f577fbd30bb2a",
+  "author": {
+    "name": "Michaël Zasso",
+    "email": "targos@protonmail.com",
+    "date": "2017-02-15T15:48:59Z"
+  },
+  "committer": {
+    "name": "Michaël Zasso",
+    "email": "targos@protonmail.com",
+    "date": "2017-03-25T08:44:12Z"
+  },
+  "tree": {
+    "sha": "3f66f71d7f4390869b43eaec521979ab533ca2d9",
+    "url": "https://api.github.com/repos/nodejs/node/git/trees/3f66f71d7f4390869b43eaec521979ab533ca2d9"
+  },
+  "message": "src: update inspector code to match upstream API\n\nPR-URL: https://github.com/nodejs/node/pull/11752\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Franziska Hinkelmann <franziska.hinkelmann@gmail.com>",
+  "parents": [
+    {
+      "sha": "9c9e2d7f4a576310eb652a620db090f00a320243",
+      "url": "https://api.github.com/repos/nodejs/node/git/commits/9c9e2d7f4a576310eb652a620db090f00a320243",
+      "html_url": "https://github.com/nodejs/node/commit/9c9e2d7f4a576310eb652a620db090f00a320243"
+    }
+  ]
+}
